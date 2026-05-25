@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@font-face {
-    font-family: 'Coolvetica';
-    src: url('../fonts/coolvetica.woff2') format('woff2'),
-         url('../fonts/coolvetica.woff') format('woff'),
-         url('../fonts/coolvetica.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+/* Use Google Fonts fallback — local font files removed to prevent WhiteNoise path resolution issues */
 
 * {
     margin: 0;
@@ -15,27 +8,27 @@
     box-sizing: border-box;
 }
 
-html {
-    width: 100%;
-    font-size: 16px; /* explicit base — prevents browser zoom scaling */
-}
-
-body {
-    width: 100%;
-    min-height: 100vh;
-    font-family: 'Coolvetica', 'Helvetica Neue', Arial, sans-serif;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    overflow-x: hidden;
-    -webkit-text-size-adjust: 100%; /* prevent iOS font scaling */
-    text-size-adjust: 100%;
-}
-
 :root {
     --primary-color: #0a0a0a;
     --secondary-color: #f5f5f5;
     --accent-color: #ff6b6b;
     --text-color: #e0e0e0;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    font-size: 16px;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
 
 /* Custom Cursor - disabled */
