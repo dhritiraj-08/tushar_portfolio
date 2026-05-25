@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-(t7m*(+!m11y=hq8nwqd@jbcbj#+f_y!4e1yylf2*be0j9x^-q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "tushar-portfolio-p30g.onrender.com",
