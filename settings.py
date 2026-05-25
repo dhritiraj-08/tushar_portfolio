@@ -9,7 +9,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-(t7m*(+!m11y=hq8nwqd@
 # Debug — off in production
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1").split(",")
+ALLOWED_HOSTS = [
+    "tushar-portfolio-p30g.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
