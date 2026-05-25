@@ -213,7 +213,7 @@ body {
     position: relative;
     z-index: 1;
     width: 100%;
-    padding: 2rem 2%;
+    padding: 2rem 3%;
     display: grid;
     gap: 2rem;
     box-sizing: border-box;
@@ -221,9 +221,6 @@ body {
 
 .bgs-grid.single {
     grid-template-columns: 1fr;
-    max-width: 1400px;
-    margin: 0 auto;
-    width: 92%;
 }
 
 /* bg1vid main - fill the cell fully */
@@ -233,12 +230,9 @@ body {
 
 .bgs-grid.one-col {
     grid-template-columns: 1fr;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 90%;
 }
 
-/* Section 7 vertical cells - no fixed aspect ratio, let video define height */
+/* Section 7 vertical cells */
 .bg2-section .bgs-grid.one-col .bgs-cell {
     aspect-ratio: unset;
     height: auto;
@@ -252,17 +246,11 @@ body {
 
 .bgs-grid.two-col {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1600px;
-    margin: 0 auto;
-    width: 96%;
     gap: 2rem;
 }
 
 .bgs-grid.three-col {
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1500px;
-    margin: 0 auto;
-    width: 94%;
 }
 
 .bgs-cell {
@@ -1374,11 +1362,12 @@ footer {
     position: relative;
     z-index: 1;
     width: 100%;
-    padding: 4rem 4%;
+    padding: 4rem 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3.5rem;
+    box-sizing: border-box;
 }
 
 .posters-content.no-title {
@@ -1400,7 +1389,6 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
     width: 100%;
-    max-width: 1400px;
     perspective: 1200px;
 }
 
@@ -1774,4 +1762,32 @@ footer {
 /* Portrait/longitudinal cells for section 8 */
 .bgs-grid.portrait .bgs-cell {
     aspect-ratio: 9 / 16;
+}
+
+/* ── Responsive grid fixes ── */
+@media (max-width: 900px) {
+    .bgs-grid.two-col,
+    .bgs-grid.three-col {
+        grid-template-columns: 1fr;
+    }
+
+    .posters-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .hc-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .posters-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bgs-grid {
+        padding: 1.5rem 4%;
+        gap: 1.2rem;
+    }
 }
