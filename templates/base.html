@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
     <title>{% block title %}Cinematic Portfolio{% endblock %}</title>
+    <style>
+        /* Critical inline CSS - guarantees base layout even if external CSS fails */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; width: 100%; }
+        body { width: 100%; min-height: 100vh; font-size: 16px; background: #0a0a0a; color: #e0e0e0; overflow-x: hidden; }
+    </style>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% block extra_css %}{% endblock %}
 </head>

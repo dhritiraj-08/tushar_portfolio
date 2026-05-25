@@ -80,8 +80,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# WhiteNoise compressed static files (no manifest hashing to avoid collectstatic errors)
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+# WhiteNoise — use simplest storage, no compression to avoid any processing issues
+STATICFILES_STORAGE = 'whitenoise.storage.StaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
