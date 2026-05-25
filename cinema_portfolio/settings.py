@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-(t7m*(+!m11y=hq8nwqd@jbcbj#+f_y!4e1yylf2*be0j9x^-q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "tushar-portfolio-p30g.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
