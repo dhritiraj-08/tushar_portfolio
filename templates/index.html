@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Section 1 - Hero video (PRIMARY - preload auto, loads immediately) -->
+    <section class="hs1 no-sound" id="home">
+        <video autoplay muted loop playsinline preload="auto"
+               poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779728087/hero_section_1_scey04.jpg">
+            <source src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779728087/hero_section_1_scey04.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Section 2 - Hero strip (PRIMARY - preload auto) -->
+    <section class="video-hero hero-section2 no-sound">
+        <div class="hero2-video-container">
+            <video class="hero2-video" autoplay muted loop playsinline preload="auto"
+                   poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779727902/hero_section_2_u8ogrm.jpg">
+                <source src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779727902/hero_section_2_u8ogrm.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- Section 3 - Full video (SECONDARY - lazy) -->
+    <section class="hs-full" id="about">
+        <video muted loop playsinline preload="metadata" data-lazy
+               poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779728052/hero_section_3_ff2x5h.jpg">
+            <source data-src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779728052/hero_section_3_ff2x5h.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Section 4 - Full video (SECONDARY - lazy) -->
+    <section class="hs-full">
+        <video muted loop playsinline preload="metadata" data-lazy
+               poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779728021/hero_section_4_am2roa.jpg">
+            <source data-src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779728021/hero_section_4_am2roa.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Section 5 - Strip (SECONDARY - lazy) -->
+    <section class="hs-strip no-sound">
+        <video muted loop playsinline preload="metadata" data-lazy
+               poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779727963/hero_section_5_wcvndp.jpg">
+            <source data-src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779727963/hero_section_5_wcvndp.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Section 6 - bg1vid_main (SECONDARY - lazy) -->
+    <section class="bg-section bg1-section" id="work">
+        <div class="bgs-bg" style="background-image: url('{% static 'images/bg1.jpg' %}')"></div>
+        <div class="bgs-grid single">
+            <div class="bgs-cell">
+                <video muted loop playsinline preload="metadata" data-lazy
+                       poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779731205/Bg1vid_Main_z11ktn.jpg">
+                    <source data-src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779731205/Bg1vid_Main_z11ktn.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7 - bg2vid1, bg2vid2 (SECONDARY - lazy) -->
+    <section class="bg-section bg2-section">
+        <div class="bgs-bg" style="background-image: url('{% static 'images/bg2.jpg' %}')"></div>
+        <div class="bgs-grid two-col">
+            <div class="bgs-cell">
+                <video muted loop playsinline preload="metadata" data-lazy
+                       poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779731794/Bg2vid1_wrmeiv.jpg">
+                    <source data-src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779731794/Bg2vid1_wrmeiv.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="bgs-cell">
+                <video muted loop playsinline preload="metadata" data-lazy
+                       poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779731761/Bg2vid2_pzjtew.jpg">
+                    <source data-src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779731761/Bg2vid2_pzjtew.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8 - bg1vid1,2,3 (SECONDARY - lazy) -->
+    <section class="bg-section bg1-section">
+        <div class="bgs-bg" style="background-image: url('{% static 'images/bg1.jpg' %}')"></div>
+        <div class="bgs-grid three-col portrait">
+            <div class="bgs-cell">
+                <video muted loop playsinline preload="metadata" data-lazy
+                       poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779727956/bg1vid1_vvhaov.jpg">
+                    <source data-src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779727956/bg1vid1_vvhaov.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="bgs-cell">
+                <video muted loop playsinline preload="metadata" data-lazy
+                       poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779731874/Bg1vid2_cukael.jpg">
+                    <source data-src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779731874/Bg1vid2_cukael.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="bgs-cell">
+                <video muted loop playsinline preload="metadata" data-lazy
+                       poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779731902/Bg1vid3_ehtzz0.jpg">
+                    <source data-src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779731902/Bg1vid3_ehtzz0.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9 - bg2vid3,4 (SECONDARY - lazy) -->
+    <section class="bg-section bg2-section">
+        <div class="bgs-bg" style="background-image: url('{% static 'images/bg2.jpg' %}')"></div>
+        <div class="bgs-grid two-col">
+            <div class="bgs-cell">
+                <video muted loop playsinline preload="metadata" data-lazy
+                       poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779728092/bg2vid3_v8eout.jpg">
+                    <source data-src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779728092/bg2vid3_v8eout.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="bgs-cell">
+                <video muted loop playsinline preload="metadata" data-lazy
+                       poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779728044/bg2vid4_o9ebhe.jpg">
+                    <source data-src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779728044/bg2vid4_o9ebhe.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 10 - Strip (SECONDARY - lazy) -->
+    <section class="hs-strip no-sound">
+        <video muted loop playsinline preload="metadata" data-lazy
+               poster="https://res.cloudinary.com/deywhxst0/video/upload/so_0/v1779727958/hero_section_10_mfmtva.jpg">
+            <source data-src="https://res.cloudinary.com/deywhxst0/video/upload/q_auto,f_auto/v1779727958/hero_section_10_mfmtva.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Section 11 - Posters -->
+    <section class="posters-section">
+        <div class="posters-bg"></div>
+        <div class="posters-content no-title">
+            <div class="posters-grid">
+                <div class="poster-cell">
+                    <img src="{% static 'images/bg2pic1.jpg' %}" alt="Poster 1" loading="lazy">
+                </div>
+                <div class="poster-cell">
+                    <img src="{% static 'images/bg2pic2.jpg' %}" alt="Poster 2" loading="lazy">
+                </div>
+                <div class="poster-cell">
+                    <img src="{% static 'images/bg2pic3.jpg' %}" alt="Poster 3" loading="lazy">
+                </div>
+                <div class="poster-cell">
+                    <img src="{% static 'images/bg2pic4.jpg' %}" alt="Poster 4" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="home-contact-section" id="contact">
+        <div class="hc-bg"></div>
+        <div class="hc-content">
+            <span class="hc-label">GET IN TOUCH</span>
+            <h2 class="hc-title">Contact Me</h2>
+            <p class="hc-sub">Let's collaborate and create something extraordinary together.</p>
+            <form class="hc-form" id="contactForm" action="{% url 'contact' %}" method="POST">
+                {% csrf_token %}
+                <div class="hc-row">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="hc-btn">Send Message</button>
+                <p class="hc-form-msg" id="formMsg"></p>
+            </form>
+            <div class="hc-links">
+                <a href="mailto:contacthaloi123@gmail.com">contacthaloi123@gmail.com</a>
+                <a href="https://www.instagram.com/tusharhaloi_?igsh=aHdic3hoZXZxeTlo" target="_blank" class="hc-instagram">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                    @tusharhaloi_
+                </a>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
