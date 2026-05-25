@@ -104,11 +104,7 @@ document.querySelectorAll('video').forEach(video => {
 
 // Page load fade in
 window.addEventListener('load', () => {
-    document.body.style.opacity = '0';
-    setTimeout(() => {
-        document.body.style.transition = 'opacity 0.6s ease';
-        document.body.style.opacity = '1';
-    }, 50);
+    document.body.style.opacity = '1';
 });
 
 // Contact form AJAX submit
