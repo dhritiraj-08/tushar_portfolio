@@ -1812,3 +1812,55 @@ footer {
         gap: 1.2rem;
     }
 }
+/* ===== GLOBAL SCALE FIX ===== */
+
+html {
+    font-size: 16px !important;
+}
+
+body {
+    zoom: 1 !important;
+    transform: none !important;
+    min-width: 100% !important;
+}
+
+/* Navbar */
+nav,
+.navbar,
+.nav-links,
+.nav-links a {
+    font-size: 16px !important;
+}
+
+/* Contact Section */
+.hc-content {
+    width: 90% !important;
+    max-width: 700px !important;
+    margin: auto !important;
+}
+
+.hc-content h1,
+.contact-title {
+    font-size: 80px !important;
+    line-height: 1 !important;
+}
+
+.hc-content p {
+    font-size: 18px !important;
+}
+
+.hc-content input,
+.hc-content textarea,
+.hc-content button {
+    font-size: 16px !important;
+    padding: 14px !important;
+}
+
+/* Mute button */
+.mute-btn,
+.unmute-btn,
+.video-control {
+    width: 52px !important;
+    height: 52px !important;
+    font-size: 22px !important;
+}
