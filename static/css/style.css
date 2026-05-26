@@ -43,7 +43,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1.2rem 5%;
+    padding: 1.5rem 5%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -60,16 +60,16 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 3rem;
+    gap: 3.5rem;
 }
 
 .nav-links a {
     color: rgba(255, 255, 255, 0.75);
     text-decoration: none;
-    font-size: 0.85rem;
-    letter-spacing: 3px;
+    font-size: 1rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    font-family: 'Coolvetica', sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     transition: color 0.3s ease;
     position: relative;
 }
@@ -1467,8 +1467,8 @@ footer {
     position: relative;
     z-index: 1;
     width: 100%;
-    max-width: 800px;
-    padding: 5rem 4%;
+    max-width: 1000px;
+    padding: 5rem 6%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1811,56 +1811,4 @@ footer {
         padding: 1.5rem 4%;
         gap: 1.2rem;
     }
-}
-/* ===== GLOBAL SCALE FIX ===== */
-
-html {
-    font-size: 16px !important;
-}
-
-body {
-    zoom: 1 !important;
-    transform: none !important;
-    min-width: 100% !important;
-}
-
-/* Navbar */
-nav,
-.navbar,
-.nav-links,
-.nav-links a {
-    font-size: 16px !important;
-}
-
-/* Contact Section */
-.hc-content {
-    width: 90% !important;
-    max-width: 700px !important;
-    margin: auto !important;
-}
-
-.hc-content h1,
-.contact-title {
-    font-size: 80px !important;
-    line-height: 1 !important;
-}
-
-.hc-content p {
-    font-size: 18px !important;
-}
-
-.hc-content input,
-.hc-content textarea,
-.hc-content button {
-    font-size: 16px !important;
-    padding: 14px !important;
-}
-
-/* Mute button */
-.mute-btn,
-.unmute-btn,
-.video-control {
-    width: 52px !important;
-    height: 52px !important;
-    font-size: 22px !important;
 }
